@@ -41,7 +41,7 @@ function drop(e) {
 function handleFiles(files) {
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
-    
+    // need to impelment this part if the drop file is not image
     if (!file.type.startsWith('image/')){ continue }
 
     const img = document.createElement("img");
@@ -49,11 +49,11 @@ function handleFiles(files) {
     img.file = file;
     img.id = "imgSource";
     dropbox.appendChild(img); 
-    // draw on canvas
+    // draw on canvas!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     const image = document.getElementById('imgSource');
-    console.log("draw on canvas");
+    console.log(image);
     ctx.drawImage(image, 0, 0);
 
     const reader = new FileReader();
