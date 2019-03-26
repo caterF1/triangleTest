@@ -1,0 +1,44 @@
+<%- include("../partials/header") -%>
+
+<div>
+    <div>
+        <a href="/triangulations/equilateral">equilateral</a>
+        <a href="/triangulations/bullet">bullet</a>
+        <a href="/triangulations/randeom">random</a>
+    </div>
+    
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+               
+                <div id="dropbox" >
+                
+                        <img id="imgSource"
+                            src="/public/images/defualt-test-photo.jpg">
+                   
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title">equilateral triangulation</h6>
+                    <p class="card-text">Bacon ipsum dolor amet venison pastrami ball tip sausage. Ball tip landjaeger brisket short ribs ground round andouille shoulder t-bone prosciutto pastrami salami pig. Fatback flank bacon pastrami alcatra. Prosciutto sausage cow, pork chop tri-tip flank chicken frankfurter tail boudin. Buffalo swine salami, shankle kevin beefy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div >
+                <canvas id="canvas" width="2000" height="1500"></canvas>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script src="/public/javascript/equalTriangle.js"></script>
+<script src="/public/javascript\uploadPhoto.js"></script>
+
+<%- include("../partials/footer") -%>
